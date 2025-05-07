@@ -11,6 +11,7 @@
 	<groupId>com.thirumal</groupId>
 	<artifactId>spring-mvc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging> <!-- Required for JSP support -->
 	<name>spring-mvc</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -51,6 +52,16 @@
 			 <version>8.0.33</version> 
 			<scope>runtime</scope>
 		</dependency>
+		 <!-- JSP + JSTL support -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
